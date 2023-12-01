@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard"> 
+          <div class="title">
+              <img src='title.png' alt="title" />
+          </div>
+          <div class="score1 ">
+            <p> COMPUTER SCORE</p>
+            <h1> 0 </h1>
+
+        </div>
+          <div class="score">
+              <p> YOUR SCORE</p>
+              <h1> 0 </h1>
+             </div>
+             
+      </div>
+      
+      <div class="hands">
+            <div class="hand paper">
+              <img src="paper.png" onclick="pickUserHand('paper')" alt="paper"/>
+            </div>
+            <div class="hand scissors">
+              <img src="scissors.png" onclick="pickUserHand('scissors')" alt="scissors"/>
+            </div>
+            <div class="hand rock">
+              <img src="rock.png" onclick="pickUserHand('rock')" alt="rock"/>                        
+            </div>
+            
+      </div>
+      
+          
+      <button class="rules-btn" tabindex="1">Rules</button>
+      <div class="modal">
+        <div class="modal__container">
+          <header class="modal__header">
+            
+            <button class="close-btn">
+              <img src="X.png" alt="Close Button" />
+            </button>
+          </header>
+          <img
+            src="rules.png"
+            alt="Rules Image"
+            class="rules-img"
+          />
+        </div>
+      </div>
+      
+      <div class="contest">       
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+              <img id="userPickImage" src="scissors.png" alt="userPickImage">
+              
+            </div>
+        </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+            
+            <div class="next-container">
+              <button class="next-btn" onclick="showHurrayPage()">Next</button>
+          </div>
+        </div>
+       
+        <div class="computerhand">
+            <h1>PC PICKED</h1>
+            <div class="handImageContainer">
+              <img id="computerPickImage" src='scissors.png' alt="computerPickImage"/> 
+            </div>   
+        </div>   
+        
+          
+      </div>
+      
+    </div>
+    
+    
+    </div>
+    <div class="hurray-page">
+      <div class="hurray-content">
+        <div class="stars-img"><img src="stars.png" alt="Star Image" class="stars-img" />
+          <img src="trophy.png" alt="Trophy Image" class="trophy-img" />
+          </div>
+      
+  
+      <h1>HURRAY!!</h1>
+      <p>YOU WON THE GAME</p>
+      <div class="newGame" onclick="restart()">PLAY AGAIN</div>
+      
+    
+        </div>
+      </div>
+  
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
+    
+      
+      
+    
+    
+    
+    
